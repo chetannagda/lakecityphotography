@@ -10,21 +10,26 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
+import LayoutTextFlipDemo from "@/components/layout-text-flip-demo";
 import { useState } from "react";
 
 export default function NavbarDemo() {
   const navItems = [
     {
+      name: "About",
+      link: "#about",
+    },
+    {
       name: "Portfolio",
       link: "#portfolio",
     },
     {
-      name: "Services",
-      link: "#services",
+      name: "Gallery",
+      link: "#gallery",
     },
     {
-      name: "About",
-      link: "#about",
+      name: "Services",
+      link: "#services",
     },
     {
       name: "Contact",
@@ -42,7 +47,6 @@ export default function NavbarDemo() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Gallery</NavbarButton>
             <NavbarButton variant="primary">Book Session</NavbarButton>
           </div>
         </NavBody>
@@ -74,13 +78,6 @@ export default function NavbarDemo() {
             <div className="flex w-full flex-col gap-4">
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
-                variant="secondary"
-                className="w-full"
-              >
-                Gallery
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full"
               >
@@ -98,80 +95,9 @@ export default function NavbarDemo() {
 const DummyContent = () => {
   return (
     <div className="container mx-auto p-8 pt-24">
-      <h1 className="mb-4 text-center text-3xl font-bold">
-        Lake City Photography
-      </h1>
-      <p className="mb-10 text-center text-sm text-zinc-500">
-        Professional photography services with a modern, responsive navbar.
-        The navbar adapts as you scroll and provides a seamless experience across all devices.
-      </p>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-        {[
-          {
-            id: 1,
-            title: "Portraits",
-            width: "md:col-span-1",
-            height: "h-60",
-            bg: "bg-neutral-100 dark:bg-neutral-800",
-          },
-          {
-            id: 2,
-            title: "Weddings",
-            width: "md:col-span-2",
-            height: "h-60",
-            bg: "bg-neutral-100 dark:bg-neutral-800",
-          },
-          {
-            id: 3,
-            title: "Events",
-            width: "md:col-span-1",
-            height: "h-60",
-            bg: "bg-neutral-100 dark:bg-neutral-800",
-          },
-          {
-            id: 4,
-            title: "Commercial",
-            width: "md:col-span-3",
-            height: "h-60",
-            bg: "bg-neutral-100 dark:bg-neutral-800",
-          },
-          {
-            id: 5,
-            title: "Nature",
-            width: "md:col-span-1",
-            height: "h-60",
-            bg: "bg-neutral-100 dark:bg-neutral-800",
-          },
-          {
-            id: 6,
-            title: "Studio",
-            width: "md:col-span-2",
-            height: "h-60",
-            bg: "bg-neutral-100 dark:bg-neutral-800",
-          },
-          {
-            id: 7,
-            title: "Lifestyle",
-            width: "md:col-span-2",
-            height: "h-60",
-            bg: "bg-neutral-100 dark:bg-neutral-800",
-          },
-          {
-            id: 8,
-            title: "Family",
-            width: "md:col-span-1",
-            height: "h-60",
-            bg: "bg-neutral-100 dark:bg-neutral-800",
-          },
-        ].map((box) => (
-          <div
-            key={box.id}
-            className={`${box.width} ${box.height} ${box.bg} flex items-center justify-center rounded-lg p-4 shadow-sm`}
-          >
-            <h2 className="text-xl font-medium">{box.title}</h2>
-          </div>
-        ))}
-      </div>
+      <LayoutTextFlipDemo />
+
+
     </div>
   );
 };
