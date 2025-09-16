@@ -14,7 +14,7 @@ export default function BoxRevealDemo() {
       <BoxReveal boxColor="#5046e6" duration={0.5}>
         <p className="text-lg md:text-xl text-neutral-300 mb-6">
           At Lake City Photography, we believe every moment tells a story worth preserving. 
-          With over a decade of experience, we specialize in capturing life's most <span className="text-blue-500">precious moments</span> through our lens.
+          With over a decade of experience, we specialize in capturing life&apos;s most <span className="text-blue-500">precious moments</span> through our lens.
         </p>
       </BoxReveal>
 
@@ -27,7 +27,7 @@ export default function BoxRevealDemo() {
 
       <BoxReveal boxColor="#5046e6" duration={0.5}>
         <p className="text-lg md:text-xl text-neutral-300">
-          Our mission is to create timeless memories that you'll <span className="text-blue-500">treasure forever</span>.
+          Our mission is to create timeless memories that you&apos;ll <span className="text-blue-500">treasure forever</span>.
         </p>
       </BoxReveal>
     </div>
