@@ -9,7 +9,7 @@ export default function AboutSection() {
           <div>
             <p className="text-lg md:text-xl text-neutral-300 mb-6">
               At Lake City Photography, we believe every moment tells a story worth preserving. 
-              With over a decade of experience, we specialize in capturing life's most precious moments 
+              With over a decade of experience, we specialize in capturing life&apos;s most precious moments 
               through our lens.
             </p>
             <p className="text-lg md:text-xl text-neutral-300 mb-6">
@@ -17,7 +17,7 @@ export default function AboutSection() {
               we bring passion and professionalism to every shoot.
             </p>
             <p className="text-lg md:text-xl text-neutral-300">
-              Our mission is to create timeless memories that you'll treasure forever.
+              Our mission is to create timeless memories that you&apos;ll treasure forever.
             </p>
           </div>
           <div className="bg-neutral-800 h-96 rounded-lg flex items-center justify-center">
